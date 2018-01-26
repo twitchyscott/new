@@ -1,0 +1,21 @@
+{% extends 'houses/base.html' %} 
+
+{% block content %}
+<main>
+    <h1>welcome {{ request.session.peep}}</h1>
+    <form actin=''>
+
+    </form>
+    <h4>thunder bird</h4>
+    <ul>
+        {% for student in thunderbirds %}
+        <li>{{student}}</li>
+        {%endfor%}
+    </ul>
+    <h4>pukwidgie</h4>
+    <ul>
+        <li>{% for student in puk%}</li>
+    </ul>
+</main>
+{%endfor%}
+{%endblock%}
